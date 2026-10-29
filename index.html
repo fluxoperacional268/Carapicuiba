@@ -37,6 +37,22 @@
       --solid-bg: #00049E;
       --solid-ink: #FFFFFF;
     }
+    .card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 18px 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 16px
+        }
+         .info-card {
+            background: var(--accent-bg, var(--navy-bg));
+            border: 1px solid color-mix(in srgb, var(--accent, var(--navy)) 35%, transparent);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 18px;
+            font-size: 14px
+        }
 
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
@@ -583,6 +599,21 @@
       transform: translateY(-2px);
     }
 
+
+    /* ---------- Imagem do Fluxo Interno: mesmo dimensionamento do primeiro arquivo ---------- */
+    .internal-flow {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      cursor: zoom-in;
+      background: #fff;
+    }
+
     .lightbox {
       position: fixed;
       inset: 0;
@@ -848,7 +879,8 @@
     <nav class="rail" id="rail">
       <div class="rail-group-label">Início</div><button class="tab active" data-tab="overview"><span
           class="ico">🧭</span>Visão geral</button><button class="tab" data-tab="contatos"><span
-          class="ico">📇</span>Contatos</button>
+          class="ico">📇</span>Contatos</button><button class="tab" data-tab="fluxo"><span
+          class="ico">🔀</span>Fluxo Interno</button>
       <div class="rail-group-label">Prefeitura</div><button class="tab" data-tab="rede"><span
           class="ico">🏛️</span>Prefeitura · Rede</button><button class="tab" data-tab="ramal"><span
           class="ico">🔧</span>Prefeitura · Ramal</button><button class="tab" data-tab="prorrogacao"><span
@@ -1602,7 +1634,17 @@
               alt="Modelo de e-mail para cancelamento"></div>
         </div>
       </section>
-      <section class="page" id="page-info">
+<section class="page" id="page-fluxo">
+                <div class="page-head">
+                    <div class="kicker">FLUXO INTERNO</div>
+                    <h2>Autorização para Obras em Via Pública</h2>
+                </div>
+                <div class="card"><img
+                        alt="Fluxo de Autorização para Obras em Via Pública — Prefeitura Municipal de Carapicuíba"
+                        class="internal-flow zoom"
+                        src="imagens/Carapicuiba.jpeg"></div>
+            </section>
+            <section class="page" id="page-info">
         <div class="page-head">
           <div class="kicker">REGISTROS</div>
           <h2>Informações importantes</h2>
