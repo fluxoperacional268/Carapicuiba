@@ -37,22 +37,24 @@
       --solid-bg: #00049E;
       --solid-ink: #FFFFFF;
     }
+
     .card {
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: 12px;
-            padding: 18px 20px;
-            box-shadow: var(--shadow);
-            margin-bottom: 16px
-        }
-         .info-card {
-            background: var(--accent-bg, var(--navy-bg));
-            border: 1px solid color-mix(in srgb, var(--accent, var(--navy)) 35%, transparent);
-            border-radius: 12px;
-            padding: 14px 18px;
-            margin-bottom: 18px;
-            font-size: 14px
-        }
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px
+    }
+
+    .info-card {
+      background: var(--accent-bg, var(--navy-bg));
+      border: 1px solid color-mix(in srgb, var(--accent, var(--navy)) 35%, transparent);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      font-size: 14px
+    }
 
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
@@ -879,8 +881,8 @@
     <nav class="rail" id="rail">
       <div class="rail-group-label">Início</div><button class="tab active" data-tab="overview"><span
           class="ico">🧭</span>Visão geral</button><button class="tab" data-tab="contatos"><span
-          class="ico">📇</span>Contatos</button><button class="tab" data-tab="fluxo"><span
-          class="ico">🔀</span>Fluxo Interno</button>
+          class="ico">📇</span>Contatos</button><button class="tab" data-tab="fluxo"><span class="ico">🔀</span>Fluxo
+        Interno</button>
       <div class="rail-group-label">Prefeitura</div><button class="tab" data-tab="rede"><span
           class="ico">🏛️</span>Prefeitura · Rede</button><button class="tab" data-tab="ramal"><span
           class="ico">🔧</span>Prefeitura · Ramal</button><button class="tab" data-tab="prorrogacao"><span
@@ -1440,10 +1442,9 @@
           </ul>
           <p style="font-size:13px;margin-top:10px;color:var(--muted)">Obs.: os Lecoms devem ser enviados pelo Facilita
             PX e, em último caso, por e-mail (enquanto o Facilita PX não é regularizado).</p>
-            <div class="step-imgs"><img class="tall"
-                    src="imagens/rede.jpeg"
-                    alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                <div class="fig-caption">Modelo de carta requerimento.</div>
+          <div class="step-imgs"><img class="tall" src="imagens/rede.jpeg"
+              alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
+          <div class="fig-caption">Modelo de carta requerimento.</div>
         </div>
         <div class="card">
           <h3 style="font-size:15px;margin-bottom:12px;">Documentação necessária — Ramal e Manutenção</h3>
@@ -1470,10 +1471,9 @@
           </div>
           <p style="font-size:13px;margin-top:10px;color:var(--muted)">Obs.: os Lecoms devem ser enviados pelo Facilita
             PX e, em último caso, por e-mail (enquanto o Facilita PX não é regularizado).</p>
-            <div class="step-imgs"><img class="tall"
-                    src="imagens/WhatsApp Image 2026-10-23 at 12.20.29.jpeg"
-                    alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                <div class="fig-caption">Modelo de carta requerimento.</div>
+          <div class="step-imgs"><img class="tall" src="imagens/WhatsApp Image 2026-10-23 at 12.20.29.jpeg"
+              alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
+          <div class="fig-caption">Modelo de carta requerimento.</div>
         </div>
         <div class="card">
           <h3 style="font-size:15px;margin-bottom:12px;">3. Passo a passo</h3>
@@ -1501,7 +1501,8 @@
               <div class="step-line"></div>
               <div class="step-body">
                 <h4>Conferência</h4>
-                <p>Conferir pelos critérios da <a href="https://comgas.docnix.com.br/comgas/corporate/index.html#/login" target="_blank">IN 524</a>: documentos obrigatórios enviados, completos, legíveis e
+                <p>Conferir pelos critérios da <a href="https://comgas.docnix.com.br/comgas/corporate/index.html#/login"
+                    target="_blank">IN 524</a>: documentos obrigatórios enviados, completos, legíveis e
                   assinados. Se OK, registrar o protocolo; se não, devolver pelo mesmo canal pedindo correção
                   específica.</p>
               </div>
@@ -1523,24 +1524,23 @@
                 <p>Se a PM pedir correção/complementação da recomposição: enviar imediatamente à contratada por e-mail,
                   com cópia ao eng. de construção Comgás do segmento, e com prazo; conferir a devolutiva; responder à PM
                   por ofício de atendimento ao Comunique-se.</p>
-                  <div class="step-imgs"><img class="tall"
-                    src="imagens/COMUNIQUE-SE.png"
+                <div class="step-imgs"><img class="tall" src="imagens/COMUNIQUE-SE.png"
                     alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                <div class="fig-caption">Modelo de carta.</div></div>
+                <div class="fig-caption">Modelo de carta.</div>
               </div>
-            
+            </div>
+
             <div class="step">
               <div class="step-num">6</div>
               <div class="step-line"></div>
               <div class="step-body">
                 <h4>Conclusão</h4>
-                <p>Após o protocolo, atualizar o status para “Processo Encerrado” na planilha de governança. Fulcrum,
-                  atualizar com todas as documentações recebidas e comprovante de protocolo. No Lecom, avançar com o
-                  comprovante de protocolo. Conferir que tudo foi registrado antes de avançar o status.</p>
-                  <div class="step-imgs"><img class="tall"
-                    src="imagens/PROCESSO ENCERRADO.png"
+                <p>Após o protocolo, atualizar o status para “Processo Encerrado” na planilha de governança. No <b>Fulcrum</b>,
+                  atualizar com todas as documentações recebidas e comprovante de protocolo. No <b>Lecom</b>, avançar com o
+                  comprovante de protocolo. Conferir se tudo foi registrado antes de avançar o status.</p>
+                <div class="step-imgs"><img class="tall" src="imagens/PROCESSO ENCERRADO.png"
                     alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                
+
               </div>
             </div>
             <div class="step">
@@ -1556,7 +1556,7 @@
         <div class="card">
           <h3 style="font-size:15px;margin-bottom:10px;">4. Prazos</h3>
           <ul class="checklist">
-            
+
             <li style="border:none"><b>Protocolo físico:</b> 5 dias úteis após a entrega completa da documentação.</li>
           </ul>
         </div>
@@ -1634,17 +1634,16 @@
               alt="Modelo de e-mail para cancelamento"></div>
         </div>
       </section>
-<section class="page" id="page-fluxo">
-                <div class="page-head">
-                    <div class="kicker">FLUXO INTERNO</div>
-                    <h2>Autorização para Obras em Via Pública</h2>
-                </div>
-                <div class="card"><img
-                        alt="Fluxo de Autorização para Obras em Via Pública — Prefeitura Municipal de Carapicuíba"
-                        class="internal-flow zoom"
-                        src="imagens/Carapicuiba.jpeg"></div>
-            </section>
-            <section class="page" id="page-info">
+      <section class="page" id="page-fluxo">
+        <div class="page-head">
+          <div class="kicker">FLUXO INTERNO</div>
+          <h2>Autorização para Obras em Via Pública</h2>
+        </div>
+        <div class="card"><img
+            alt="Fluxo de Autorização para Obras em Via Pública — Prefeitura Municipal de Carapicuíba"
+            class="internal-flow zoom" src="imagens/Carapicuiba.jpeg"></div>
+      </section>
+      <section class="page" id="page-info">
         <div class="page-head">
           <div class="kicker">REGISTROS</div>
           <h2>Informações importantes</h2>
